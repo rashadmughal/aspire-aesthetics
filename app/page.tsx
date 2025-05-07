@@ -11,7 +11,7 @@ export default function Home() {
             <Image
               src="/logo.svg"
               alt="Aspire Aesthetics Logo"
-              width={200}
+              width={300}
               height={60}
               priority
             />
