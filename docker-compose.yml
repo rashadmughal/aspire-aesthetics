@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    # Uncomment the following lines if you need to persist Next.js cache
+    # volumes:
+    #   - .next-cache:/app/.next
+
+# Uncomment if using volumes
+# volumes:
+#   .next-cache:
