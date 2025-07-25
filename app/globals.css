@@ -27,8 +27,8 @@
 :root {
   --background: #ECEBDD;
   --foreground: #3C3C49;
-  --primary: #6D6565;
-  --primary-dark: #2B3B46;
+  --primary: #2B3B46;
+  --primary-dark: #6D6565;
   --secondary: #FFFFFF;
   --accent: #A79F9C;
   --text-light: #44443C;
@@ -52,10 +52,10 @@
   :root {
     --background: #2B3B46;
     --foreground: #ECEBDD;
-    --primary: #6D6565;
+    --primary: #2B3B46;
     --primary-dark: #A79F9C;
     --secondary: #3C3C49;
-    --accent: #A79F9C;
+    --accent: #6D6565;
     --text-light: #ECEBDD;
     --text-dark: #FFFFFF;
     --brand-grey-1: #B3B4B5;
