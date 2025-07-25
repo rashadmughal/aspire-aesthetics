@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="Aspire Aesthetics Logo"
               width={300}
               height={60}
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-[var(--secondary)]">
+      <section id="about" className="py-24 bg-[var(--secondary)] border-t-4 border-[var(--accent)]">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-white">
+      <section id="contact" className="py-24 bg-white border-t-4 border-[var(--accent)]">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <div className="inline-block border border-[var(--primary)] p-6 elegant-shadow bg-[var(--secondary)]">
@@ -168,12 +168,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[var(--text-dark)] text-white py-12">
+      <footer className="bg-[var(--primary-dark)] text-white py-12">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Aspire Aesthetics Logo"
                 width={200}
                 height={40}

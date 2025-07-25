@@ -1,14 +1,42 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Quiche Display';
+  src: url('/QuicheDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/Trajan Pro Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Times Custom';
+  src: url('/times.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #d4b098;
-  --primary-dark: #c09a82;
-  --secondary: #f8f5f2;
-  --accent: #6b7280;
-  --text-light: #6b7280;
-  --text-dark: #1f2937;
+  --background: #ECEBDD;
+  --foreground: #3C3C49;
+  --primary: #6D6565;
+  --primary-dark: #2B3B46;
+  --secondary: #FFFFFF;
+  --accent: #A79F9C;
+  --text-light: #44443C;
+  --text-dark: #3C3C49;
+  --brand-grey-1: #B3B4B5;
+  --brand-grey-2: #B0ACB4;
+  --brand-grey-3: #919498;
+  --brand-grey-4: #868B94;
 }
 
 @theme inline {
@@ -22,14 +50,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #d4b098;
-    --primary-dark: #c09a82;
-    --secondary: #1a1a1a;
-    --accent: #9ca3af;
-    --text-light: #9ca3af;
-    --text-dark: #f3f4f6;
+    --background: #2B3B46;
+    --foreground: #ECEBDD;
+    --primary: #6D6565;
+    --primary-dark: #A79F9C;
+    --secondary: #3C3C49;
+    --accent: #A79F9C;
+    --text-light: #ECEBDD;
+    --text-dark: #FFFFFF;
+    --brand-grey-1: #B3B4B5;
+    --brand-grey-2: #B0ACB4;
+    --brand-grey-3: #919498;
+    --brand-grey-4: #868B94;
   }
 }
 
@@ -38,17 +70,22 @@ body {
   color: var(--foreground);
   letter-spacing: 0.01em;
   line-height: 1.6;
+  font-family: 'Times Custom', Times, serif;
 }
 
 .font-heading {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Quiche Display', 'Playfair Display', Georgia, serif;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .font-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Times Custom', Times, serif;
+}
+
+.font-accent {
+  font-family: 'Trajan Pro', serif;
 }
 
 p {
